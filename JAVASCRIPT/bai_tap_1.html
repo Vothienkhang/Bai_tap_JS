@@ -1,0 +1,46 @@
+<!-- Bài tập: Tạo 1 folder mới và git lên github sau đó gửi link vào slack 
+ Bài 1: Nhập vào tên của bạn và hiển thị ra cho người dùng (ít nhất 3 cách hiển thị) khuyến khích làm hết 2 cách nhập và 4 cách xuất 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Input your name:</h1>
+
+    <!-- Cách nhập 1: dùng input + onclick -->
+    <input type="text" id="input_name" placeholder="Input your name">
+    <button onclick="Display()">Display</button>
+
+    <!-- Khu vực để hiển thị tên -->
+    <p id="output"></p>
+
+
+    <script>
+        // Cách nhập 2: dùng prompt
+        let name = prompt("Input your name (Cách 1 - dùng prompt):");
+
+        // Cách xuất 1: alert
+        alert("Xin chào "+ name + " --> Cách xuất 1: alert");
+
+        // Cách xuất 2: console.log
+        console.log("Xin chào "+ name);
+
+        // Cách xuất 3: document.write
+        document.write("Xin chào " + name + " --> Cách xuất 3: document.write");
+
+        // Tạo function khi nhấn nút
+        function Display() {
+            let inputname = document.getElementById("input_name").value;
+            
+            // Cách xuất 4: innerText/innerHTML
+            document.getElementById("output").innerHTML = "Cách xuất 4: Xin chào " + inputname;
+        }
+
+    </script>
+</body>
+</html>
