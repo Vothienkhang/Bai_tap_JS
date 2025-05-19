@@ -1,0 +1,37 @@
+<!-- Bài tập: Tạo 1 folder mới và git lên github sau đó gửi link vào slack 
+
+ Bài 2: Tạo lần lượt 5 biến sau: a = 1, b = 2, c = 10, d = 21 
+ TÍnh phép tính result  = a + b - c/d
+ In ra result theo 4 cách
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="ket_qua"></h1>
+    <script>
+        // Tạo biến a b c d result
+        let a = 1;
+        let b = 2;
+        let c = 10; 
+        let d = 21;
+        let result = a + b -c/d;
+
+        // In ra result theo 4 cách
+        alert("Cách 1: Dùng alert " + result)
+
+        console.log("Cách 2: Dùng console.log" + result)
+
+        document.write("Cách 3: Dùng document.write cho kết quả là " + result)
+
+        document.getElementById("ket_qua").innerHTML = "Cách 4: Dùng inner html cho kết quả là " + result
+
+    </script>
+</body>
+</html>
+
